@@ -20,3 +20,37 @@
 // }
 
 // export default MyProfile
+
+
+
+
+import React, { useState } from 'react'
+import Style from "./MyProfile.module.css"
+
+const MyProfile = () => {
+
+    let username = "Punith L"
+    const [course, setCourse] = useState("WebTech")
+
+    let changeCourse = () => {
+        setCourse("Reactjs")
+    }
+
+    return (
+        <>
+            <h3>{username}</h3>
+            <h3>Course is : {course}</h3>
+            <button onClick={changeCourse}>CHANGE COURSE</button>
+            
+            <div class={Style.divBlock}>
+                <h1>My IdCard</h1>
+                <p>B.E.</p>
+                <br/>
+                <p>2025</p>
+            </div>
+            
+        </>
+    )
+}
+
+export default MyProfile

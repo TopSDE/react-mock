@@ -12,6 +12,9 @@
 
 // export default App
 
+
+
+
 // import React,{Component} from "react";
 
 // class App extends Component {
@@ -22,16 +25,36 @@
 // }
 // export default App
 
+
+
+
 // App.jsx
+// import React from 'react'
+// import GrandParent from './GrandParent'
+
+// const App = () => {
+//   return (
+//     <>
+//       <GrandParent/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+
 import React from 'react'
-import GrandParent from './GrandParent'
+import MyProfile from "./modulecss/MyProfile"
 
 const App = () => {
-  return (
-    <>
-      <GrandParent/>
-    </>
-  )
+
+    return (
+      <>
+        <MyProfile/>
+      </>
+    )
 }
 
 export default App
